@@ -16,7 +16,7 @@ function SignIn() {
           :
           <>
             <h2>Not Signed In</h2>
-            <button className="p-4 rounded-xl" onClick={() => { signIn() }}>SIGN IN</button>
+            <button className=" p-4 rounded-xl" onClick={() => { signIn() }}>SIGN IN</button>
           </>
       }
     </>

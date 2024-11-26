@@ -87,7 +87,6 @@ export async function POST(req: Request) {
         })
 
     } catch (error) {
-        console.error(error);
         return Response.json({
             success: false,
             message: "Error registering user"
