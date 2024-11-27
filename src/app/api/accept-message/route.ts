@@ -33,7 +33,8 @@ export async function POST(req: Request) {
         
         return Response.json({
             success: true,
-            message: "Successfully updated user"
+            message: "Successfully updated user",
+            updatedUser
         }, { status: 200 });
     } catch (error) {
         return Response.json({
