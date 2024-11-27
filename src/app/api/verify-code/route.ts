@@ -16,7 +16,7 @@ export async function POST(req: Request) {
             return Response.json({
                 success: false,
                 message: "User not found"
-            }, {status: 200})
+            }, { status: 400 })
         }
         
         const isCodeValid = user.verifyCode === code;
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     } catch (error) {
         return Response.json({
             success: false,
-            message: "Error registering user"
+            message: "Internal server error"
         }, {
             status: 500
         });
